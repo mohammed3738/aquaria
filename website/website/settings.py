@@ -29,7 +29,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.aquariaa.com','aquariaa.com','127.0.0.1','192.168.1.77']
+ALLOWED_HOSTS = ['www.aquariaa.com','aquariaa.com','127.0.0.1','16.170.140.99']
 #www.aquariaa.com','aquariaa.com','13.233.96.87
 
 # Application definition
