@@ -1,0 +1,1142 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>Aquaria - Insurance Company</title>
+<meta content="Aquaria - Insurance Company" name="description" />
+<meta content="" name="keywords" />
+<meta content="" name="author" />
+{% endblock head %} {% block body %}
+
+<!-- content begin -->
+<div class="no-bottom no-top" id="content">
+  <div id="top"></div>
+
+  {% comment %}
+  <section
+    aria-label="section"
+    class="no-top no-bottom vh-100"
+    data-bgimage="url({% static 'images/background/home.png' %}) top left"
+  >
+    <div class="v-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+            <div class="spacer-double"></div>
+            <div class="spacer-double"></div>
+            <h1>Family Health Care &amp;<br />Hospital Insurance</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="spacer-20"></div>
+            <a class="btn-custom invert" href="features.html">Get a Quote</a
+            >&nbsp;
+            <a class="btn-custom btn-white" href="download.html">Learn More</a>
+            <div class="spacer-double"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endcomment %}
+
+  <!-- revolution slider begin -->
+  <section
+    id="section-slider"
+    class="fullwidthbanner-container text-light"
+    aria-label="section-slider"
+  >
+    <div id="slider-revolution">
+      <ul>
+        <li
+          data-transition="fade"
+          data-slotamount="10"
+          data-masterspeed="300"
+          data-thumb=""
+        >
+          <!--  BACKGROUND IMAGE -->
+          <img
+            alt=""
+            class="rev-slidebg"
+            data-bgposition="top center"
+            data-bgfit="cover"
+            data-bgrepeat="no-repeat"
+            data-bgparallax="10"
+            src="{% static 'images/background/home3.png' %}"
+          />
+          <div
+            class="tp-caption big-s1"
+            data-x="0"
+            data-y="260"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h4 class="id-color-secondary">Loans</h4>
+          </div>
+          <div
+            class="tp-caption very-big-white tp-resizeme"
+            data-x="0"
+            data-y="310"
+            data-width="560"
+            data-height="none"
+            data-whitespace="wrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
+            data-start="600"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h1>If money is problem, make us the Solution</h1>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="440"
+            data-width="480"
+            data-height="none"
+            data-whitespace="wrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
+            data-start="700"
+          >
+            <p class="lead xs-hide">
+              Get your loan approved within few hours after applying with low
+              interest rates.
+            </p>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="520"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
+            data-start="800"
+          >
+            {% comment %}
+            <a class="btn-custom invert" href="features.html">Get a Quote</a
+            >&nbsp; {% endcomment %}
+            <a class="btn-border btn-custom invert" href="{% url 'Loan' %}"
+              >Learn More</a
+            >
+          </div>
+        </li>
+        <li
+          data-transition="fade"
+          data-slotamount="10"
+          data-masterspeed="300"
+          data-thumb=""
+        >
+          <!--  BACKGROUND IMAGE -->
+          <img
+            alt=""
+            class="rev-slidebg"
+            data-bgposition="top center"
+            data-bgfit="cover"
+            data-bgrepeat="no-repeat"
+            data-bgparallax="10"
+            src="{% static 'images/background/home1.png' %}"
+          />
+
+          <div
+            class="tp-caption big-s1"
+            data-x="0"
+            data-y="310"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h3>Insurance</h3>
+          </div>
+          <div
+            class="tp-caption very-big-white tp-resizeme"
+            data-x=""
+            data-y="370"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
+            data-start="600"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h1>For You &amp; Your Family</h1>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="440"
+            data-width="500"
+            data-height="none"
+            data-whitespace="wrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
+            data-start="700"
+          >
+            <p class="lead xs-hide">
+              We provide different types of insurance policies which help your
+              family to get secured.
+            </p>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="520"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
+            data-start="800"
+          >
+            {% comment %}
+            <a class="btn-custom invert" href="features.html">Get a Quote</a
+            >&nbsp; {% endcomment %}
+            <a class="btn-border btn-custom invert" href="{% url 'Policy' %}"
+              >Learn More</a
+            >
+          </div>
+        </li>
+
+        <li
+          data-transition="fade"
+          data-slotamount="10"
+          data-masterspeed="300"
+          data-thumb=""
+        >
+          <!--  BACKGROUND IMAGE -->
+          <img
+            alt=""
+            class="rev-slidebg"
+            data-bgposition="top center"
+            data-bgfit="cover"
+            data-bgrepeat="no-repeat"
+            data-bgparallax="10"
+            src="{% static 'images/background/home3.png' %}"
+          />
+          <div
+            class="tp-caption big-s1"
+            data-x="0"
+            data-y="310"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h4 class="id-color-secondary">Credit Card</h4>
+          </div>
+          <div
+            class="tp-caption very-big-white tp-resizeme"
+            data-x="0"
+            data-y="370"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
+            data-start="600"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h1>Customized for Individual Needs</h1>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="440"
+            data-width="480"
+            data-height="none"
+            data-whitespace="wrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
+            data-start="700"
+          >
+            <p class="lead xs-hide">
+              Get your own credit card with minimum documents.
+            </p>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="520"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
+            data-start="800"
+          >
+            {% comment %}
+            <a class="btn-custom invert" href="features.html">Get a Quote</a
+            >&nbsp; {% endcomment %}
+            <a class="btn-border btn-custom invert" href="download.html"
+              >Learn More</a
+            >
+          </div>
+        </li>
+        {% comment %}
+        <li
+          data-transition="fade"
+          data-slotamount="10"
+          data-masterspeed="300"
+          data-thumb=""
+        >
+          <!--  BACKGROUND IMAGE -->
+          <img
+            alt=""
+            class="rev-slidebg"
+            data-bgposition="top center"
+            data-bgfit="cover"
+            data-bgrepeat="no-repeat"
+            data-bgparallax="10"
+            src="{% static 'images/background/home.png' %}"
+          />
+          <div
+            class="tp-caption big-s1"
+            data-x="0"
+            data-y="230"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:200;e:Power2.easeInOut;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h4 class="id-color-secondary">Priva Insurance</h4>
+          </div>
+          <div
+            class="tp-caption very-big-white tp-resizeme"
+            data-x="0"
+            data-y="280"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:400;e:Power2.easeInOut;"
+            data-start="600"
+            data-splitin="none"
+            data-splitout="none"
+            data-responsive_offset="on"
+          >
+            <h1>Because People Matter</h1>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="360"
+            data-width="480"
+            data-height="none"
+            data-whitespace="wrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:600;e:Power2.easeInOut;"
+            data-start="700"
+          >
+            <p class="lead xs-hide">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div
+            class="tp-caption"
+            data-x="0"
+            data-y="450"
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+            data-transform_in="y:100px;opacity:0;s:500;e:Power2.easeOut;"
+            data-transform_out="opacity:0;y:-100;s:800;e:Power2.easeInOut;"
+            data-start="800"
+          >
+            <a class="btn-custom invert" href="features.html">Get a Quote</a
+            >&nbsp;
+            <a class="btn-border" href="download.html">Learn More</a>
+          </div>
+        </li>
+        {% endcomment %}
+      </ul>
+    </div>
+  </section>
+  <!-- revolution slider close -->
+
+  {% comment %}
+  <div class="spacer-double"></div>
+  <div class="spacer-double"></div>
+  <div class="spacer-double"></div>
+  <div class="spacer-20"></div>
+  {% endcomment %}
+
+  <section id="section-highlight" class="bg-color text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="p-title invert text-white">Welcome</span><br />
+          <h2>Plan for the future<br />and live your life now</h2>
+          <div class="small-border white sm-left"></div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            We have been providing Professional Financial Planning, Investment
+            Advisory and Loan Management services to Corporates & Individuals
+            since 2012. We are based in Mumbai with presence in PAN India
+            connected directly and through our esteemed partners providing
+            services to Resident of India and NRI’s across world.
+          </p>
+          <p>
+            Our aim is to build lasting relationships with our individual and
+            corporate clients by providing them with customised risk and wealth
+            management solutions that suit their changing needs and to educate
+            on all the possible options available which suit better.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="section" data-bgcolor="#ffffff">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <span class="p-title invert">Insurance</span><br />
+          <h2>Insurance Provider</h2>
+          <p>
+            Insurance Companies in India are recognized by the IRDA – Insurance
+            Regulatory and Development Authority of India, the statutory body
+            promoting and regulating various types of insurance companies in
+            India.
+          </p>
+          <p>
+            The insurance industry comprises a total of 57 insurance companies
+            in India. Life Insurance Corporation of India is the only public
+            sector company among the life insurers. General Insurance
+            Corporation of India is the only reinsurer in India recognized by
+            the Insurance Regulatory and Development Authority.
+          </p>
+          <p>
+            We provide different types of Insurances like Health insurance,
+            General Insurance, life insurance, Commercial Insurance, Term
+            Insurance
+          </p>
+
+          <div class="mb-5">
+            <a href="insurance" class="btn-custom capsule med">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 offset-md-1">
+          <div class="de-images">
+            <img
+              class="di-big img-fluid"
+              src="{% static 'images/background/ihp1.png' %}"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="spacer-double"></div>
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="de-images">
+            <img
+              class="di-big img-fluid"
+              src="{% static 'images/background/lhp.png' %}"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-5">
+          <span class="p-title invert">Loans</span><br />
+          <h2>Loan Provider</h2>
+          <p>
+            The term loan refers to a sort of credit,wherein a amount of money
+            is lent to every other party in exchange for future repayment of the
+            value or principal amount. In many cases, the lender also provides
+            interest or finance charges to the principal value which the
+            borrower need to pay off similarly to the principal balance.
+          </p>
+          <p>
+            Loans can be for a specific, one-time amount, or they will be
+            available as an open-ended line of credit as much as a specified
+            limit. Loans are available in many forms such as secured, unsecured,
+            commercial, and personal loans.
+          </p>
+          <p>
+            Build the house you have been thinking of. Buy the car of your
+            dreams. Take that long-pending vacation. Take a look at the products
+            we offer and see for yourself how versatile our range of loans is.
+            Commercial Business Loans offer complete banking solutions for all
+            your financial needs.
+          </p>
+
+          <div class="mb-5">
+            <a href="loan" class="btn-custom capsule med">Learn More</a>
+          </div>
+        </div>
+        <div class="spacer-double"></div>
+
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <span class="p-title invert">Credit Card</span><br />
+            <h2>Credit Card Provider</h2>
+            <p>
+              Insurance Companies in India are recognized by the IRDA –
+              Insurance Regulatory and Development Authority of India, the
+              statutory body promoting and regulating various types of insurance
+              companies in India.
+            </p>
+            <p>
+              The insurance industry comprises a total of 57 insurance companies
+              in India. Life Insurance Corporation of India is the only public
+              sector company among the life insurers. General Insurance
+              Corporation of India is the only reinsurer in India recognized by
+              the Insurance Regulatory and Development Authority.
+            </p>
+            <p>
+              We provide different types of Insurances like Health insurance,
+              General Insurance, life insurance, Commercial Insurance, Term
+              Insurance
+            </p>
+
+            <div class="mb-5">
+              <a href="insurance" class="btn-custom capsule med">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 offset-md-1">
+            <div class="de-images">
+              <img
+                class="di-big img-fluid"
+                src="{% static 'images/background/cc1.jpg' %}"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %}
+  <div class="spacer-double"></div>
+  {% endcomment %} {% comment %}
+  <section class="no-top relative z1000">
+    <div class="container">
+      <div class="row mt-100">
+        <div class="col-md-4">
+          <div class="mask rounded img-shadow">
+            <div class="cover rounded">
+              <div class="c-inner">
+                <h3>
+                  <i class="icofont-check-circled"></i
+                  ><span>Online Payment</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="spacer20"></div>
+                <a href="#" class="btn-custom invert capsule">Read more</a>
+              </div>
+            </div>
+            <img
+              src="{% static 'images/misc/f1.jpg' %}"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="mask rounded img-shadow">
+            <div class="cover rounded">
+              <div class="c-inner">
+                <h3>
+                  <i class="icofont-check-circled"></i><span>Quick Claims</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="spacer20"></div>
+                <a href="#" class="btn-custom invert capsule">Read more</a>
+              </div>
+            </div>
+            <img
+              src="{% static 'images/misc/f2.jpg' %}"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="mask rounded img-shadow">
+            <div class="cover rounded">
+              <div class="c-inner">
+                <h3>
+                  <i class="icofont-check-circled"></i
+                  ><span>14-day Guarantee</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="spacer20"></div>
+                <a href="#" class="btn-custom invert capsule">Read more</a>
+              </div>
+            </div>
+            <img
+              src="{% static 'images/misc/f3.jpg' %}"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endcomment %}
+
+  <section id="section-fun-facts" class="no-top">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-4 col-md-4 text-center wow fadeInUp"
+          data-wow-delay="0s"
+        >
+          <div class="de_count">
+            <h3><span class="timer" data-to="4" data-speed="3000">0</span>K</h3>
+            <h5 class="id-color">Loan Provided</h5>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-4 text-center wow fadeInUp"
+          data-wow-delay=".25s"
+        >
+          <div class="de_count">
+            <h3><span class="timer" data-to="10" data-speed="50">0</span>Cr</h3>
+            <h5 class="id-color">Sum Insured</h5>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-4 text-center wow fadeInUp"
+          data-wow-delay=".4s"
+        >
+          <div class="de_count">
+            <h3>
+              <span class="timer" data-to="10" data-speed="3000">0</span>K
+            </h3>
+            <h5 class="id-color">Client Serviced</h5>
+          </div>
+        </div>
+        {% comment %}
+        <div
+          class="col-lg-3 col-md-4 text-center wow fadeInUp mb-sm-30"
+          data-wow-delay=".6s"
+        >
+          <div class="de_count">
+            <h3><span class="timer" data-to="5" data-speed="3000">0</span>k</h3>
+            <h5 class="id-color">Dummy</h5>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 text-center wow fadeInUp mb-sm-30"
+          data-wow-delay=".8s"
+        >
+          <div class="de_count">
+            <h3>
+              <span class="timer" data-to="100" data-speed="3000">0</span>+
+            </h3>
+            <h5 class="id-color">Countries</h5>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 text-center wow fadeInUp mb-sm-30"
+          data-wow-delay="1s"
+        >
+          <div class="de_count">
+            <h3><span class="timer" data-to="2" data-speed="3000">2</span>k</h3>
+            <h5 class="id-color">Staff Member</h5>
+          </div>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="section-testimonial"
+    data-bgcolor="#f5f7f0"
+    data-bgimage="url({% static 'images/background/15.jpg' %}) top"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <span class="p-title invert text-white">Latest</span><br />
+            <h2>Customer Reviews</h2>
+            <div class="small-border"></div>
+          </div>
+          <div class="owl-carousel owl-theme" id="testimonial-carousel">
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Trustworthy insurance</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>John, Pixar Studio</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Quality insurance service</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>Sarah, Microsoft</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Top companies listed</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>Michael, Apple</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Great services</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>Thomas, Samsung</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Easy to claim</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>John, Pixar Studio</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Excellent support</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>Sarah, Microsoft</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Reliable insurance</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>Michael, Apple</span></div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="de_testi opt-2 review no-bg">
+                <blockquote>
+                  <i class="fa fa-quote-left id-color"></i>
+                  <h3>Five-star services</h3>
+                  <p>
+                    Eiusmod consequat eu adipisicing minim anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation
+                    irure Lorem incididunt nostrud.
+                  </p>
+                  <div class="de_testi_by"><span>Thomas, Samsung</span></div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span class="p-title invert text-white">Frequently</span><br />
+          <h2>Asked Qustions</h2>
+          <div class="small-border"></div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Accordion -->
+          <div id="accordion-1" class="accordion">
+            <!-- Accordion item 1 -->
+            <div class="card">
+              <div
+                id="heading-a1"
+                class="card-header bg-white shadow-sm border-0"
+              >
+                <h6 class="mb-0">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse-a1"
+                    aria-expanded="false"
+                    aria-controls="collapse-a1"
+                    class="d-block position-relative text-dark collapsible-link py-2"
+                    >When is time to update my coverage?</a
+                  >
+                </h6>
+              </div>
+              <div
+                id="collapse-a1"
+                aria-labelledby="heading-a1"
+                data-parent="#accordion-1"
+                class="collapse"
+              >
+                <div class="card-body p-4">
+                  <p class="m-0">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 2 -->
+            <div class="card">
+              <div
+                id="heading-a2"
+                class="card-header bg-white shadow-sm border-0"
+              >
+                <h6 class="mb-0">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse-a2"
+                    aria-expanded="false"
+                    aria-controls="collapse-a2"
+                    class="d-block position-relative collapsed text-dark collapsible-link py-2"
+                    >How often should I review my life insurance needs?</a
+                  >
+                </h6>
+              </div>
+              <div
+                id="collapse-a2"
+                aria-labelledby="heading-a2"
+                data-parent="#accordion-1"
+                class="collapse"
+              >
+                <div class="card-body p-4">
+                  <p class="m-0">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 3 -->
+            <div class="card">
+              <div
+                id="heading-a3"
+                class="card-header bg-white shadow-sm border-0"
+              >
+                <h6 class="mb-0">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse-a3"
+                    aria-expanded="false"
+                    aria-controls="collapse-a3"
+                    class="d-block position-relative collapsed text-dark collapsible-link py-2"
+                    >What happen to my insurance if I stop paying?</a
+                  >
+                </h6>
+              </div>
+              <div
+                id="collapse-a3"
+                aria-labelledby="heading-a3"
+                data-parent="#accordion-1"
+                class="collapse"
+              >
+                <div class="card-body p-4">
+                  <p class="m-0">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Accordion -->
+          <div id="accordion-2" class="accordion">
+            <!-- Accordion item 1 -->
+            <div class="card">
+              <div
+                id="heading-b1"
+                class="card-header bg-white shadow-sm border-0"
+              >
+                <h6 class="mb-0">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse-b1"
+                    aria-expanded="false"
+                    aria-controls="collapse-b1"
+                    class="d-block position-relative text-dark collapsible-link py-2"
+                    >How much life insurance do i need?</a
+                  >
+                </h6>
+              </div>
+              <div
+                id="collapse-b1"
+                aria-labelledby="heading-b1"
+                data-parent="#accordion-2"
+                class="collapse"
+              >
+                <div class="card-body p-4">
+                  <p class="m-0">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 2 -->
+            <div class="card">
+              <div
+                id="heading-b2"
+                class="card-header bg-white shadow-sm border-0"
+              >
+                <h6 class="mb-0">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse-b2"
+                    aria-expanded="false"
+                    aria-controls="collapse-b2"
+                    class="d-block position-relative collapsed text-dark collapsible-link py-2"
+                    >What makes this company different form other?</a
+                  >
+                </h6>
+              </div>
+              <div
+                id="collapse-b2"
+                aria-labelledby="heading-b2"
+                data-parent="#accordion-2"
+                class="collapse"
+              >
+                <div class="card-body p-4">
+                  <p class="m-0">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 3 -->
+            <div class="card">
+              <div
+                id="heading-b3"
+                class="card-header bg-white shadow-sm border-0"
+              >
+                <h6 class="mb-0">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    data-target="#collapse-b3"
+                    aria-expanded="false"
+                    aria-controls="collapse-b3"
+                    class="d-block position-relative collapsed text-dark collapsible-link py-2"
+                    >Do I need a life insurance policy?</a
+                  >
+                </h6>
+              </div>
+              <div
+                id="collapse-b3"
+                aria-labelledby="heading-b3"
+                data-parent="#accordion-2"
+                class="collapse"
+              >
+                <div class="card-body p-4">
+                  <p class="m-0">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% comment %}
+  <section class="no-padding bg-color text-light">
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="feature-box f-boxed style-3"
+            data-bgcolor="rgba(255,255,255,.2)"
+          >
+            <i class="bg-color-secondary i-boxed fa fa-comments"></i>
+            <div class="text">
+              <h4>Free Consultation</h4>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem.
+            </div>
+            <i class="wm fa fa-comments"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="feature-box f-boxed style-3"
+            data-bgcolor="rgba(255,255,255,.15)"
+          >
+            <i class="bg-color-secondary i-boxed fa fa-address-card"></i>
+            <div class="text">
+              <h4>Find an Agent</h4>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem.
+            </div>
+            <i class="wm fa fa-address-card"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="feature-box f-boxed style-3"
+            data-bgcolor="rgba(255,255,255,.1)"
+          >
+            <i class="bg-color-secondary i-boxed fa fa-file-text"></i>
+            <div class="text">
+              <h4>Get a Quote</h4>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem.
+            </div>
+            <i class="wm fa fa-file-text"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="feature-box f-boxed style-3"
+            data-bgcolor="rgba(255,255,255,.05)"
+          >
+            <i class="bg-color-secondary i-boxed fa fa-clock-o"></i>
+            <div class="text">
+              <h4>Free Trial</h4>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem.
+            </div>
+            <i class="wm fa fa-clock-o"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endcomment %}
+</div>
+<!-- content close -->
+
+<a href="#" id="back-to-top"></a>
+{% endblock body %}

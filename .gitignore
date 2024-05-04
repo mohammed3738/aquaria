@@ -1,0 +1,14 @@
+/venv
+/home/__pycache__
+/home/migrations/__pycache__
+/loan/__pycache__
+/loan/migrations/__pycache__
+/website/__pycache__
+/blog/__pycache__
+/blog/migrations/__pycache__
+/policy/__pycache__
+/policy/migrations/__pycache__
+*/__pycache__/*
+/html-files
+/PRIVA_HTML
+/website/db.sqlite3

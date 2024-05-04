@@ -1,0 +1,273 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Aquaria | Insurance providing Company</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+<meta content="" name="author">
+{% endblock head %}
+
+
+{% block body %}
+<!-- content begin -->
+<div class="no-bottom no-top" id="content">
+    <div id="top"></div>
+
+    <!-- section begin -->
+
+    <section aria-label="section" class="no-top no-bottom vh-100"
+    data-bgimage="url({% static 'images/background/ins.png' %}) top left">
+    <div class="v-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s"></div>
+
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+            <div class="padding30 rounded img-shadow" data-bgcolor="rgba(240, 246, 234, .7)">
+              <h2>
+                No more hassles & no more worries.
+                <span class="id-color">Register today</span>.
+              </h2>
+              <a href="{% url 'HealthInsurance' %}" class="icon-box rounded">
+                <i class="icofont-heart-beat"></i>
+                <span>Health</span>
+              </a>
+
+              <a href="{% url 'LifeInsurance' %}" class="icon-box rounded">
+                <i class="icofont-group"></i>
+                <span>Life</span>
+              </a>
+
+              {% comment %} <a href="{% url 'TermInsurance' %}" class="icon-box rounded">
+                <i class="icofont-users"></i>
+                <span>Term</span>
+              </a> {% endcomment %}
+
+              <a href="{% url 'GeneralInsurance' %}" class="icon-box rounded">
+                <i class="icofont-shield"></i>
+                <span>General</span>
+              </a>
+
+              
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- section close -->
+
+    <section id="section-highlight" class="bg-color text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <span class="p-title invert text-white">Welcome</span><br />
+              <h2>Plan for the future<br />and live your life now</h2>
+              <div class="small-border white sm-left"></div>
+            </div>
+            <div class="col-md-6">
+              <p>
+                We have been providing Professional Financial Planning, Investment
+                Advisory and Loan Management services to Corporates & Individuals
+                since 2012. We are based in Mumbai with presence in PAN India
+                connected directly and through our esteemed partners providing
+                services to Resident and NRI’s across world.
+              </p>
+              <p>
+                Our aim is to build lasting relationships with our individual and
+                corporate clients by providing them with customised risk and wealth
+                management solutions that suit their changing needs and to educate
+                on all the possible options available which suit better.
+              </p>
+            </div>
+          </div>
+    
+          <div class="spacer-double"></div>
+        </div>
+      </section>
+    
+      <section class="no-top relative z1000">
+        <div class="container">
+          <div class="row mt-100 justify-content-center">
+            
+    
+            <div class="col-md-4">
+              <div class="mask rounded img-shadow">
+                <div class="cover rounded">
+                  <div class="c-inner">
+                    <h3>
+                      <i class="icofont-group"></i><span>Life Insurance</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="spacer20"></div>
+                    <a href="{% url 'LifeInsurance' %}" class="btn-custom invert capsule">Read more</a>
+                  </div>
+                </div>
+                <img src="{% static 'images/services/li.png' %}" alt="" class="img-responsive" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="mask rounded img-shadow">
+                <div class="cover rounded">
+                  <div class="c-inner">
+                    <h3>
+                      <i class="icofont-heart-beat"></i><span>Health Insurance</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="spacer20"></div>
+                    <a href="{% url 'HealthInsurance' %}" class="btn-custom invert capsule">Read more</a>
+                  </div>
+                </div>
+                <img src="{% static 'images/services/hi1.png' %}" alt="" class="img-responsive" />
+              </div>
+            </div>
+    
+            {% comment %} <div class="col-md-4">
+              <div class="mask rounded img-shadow">
+                <div class="cover rounded">
+                  <div class="c-inner">
+                    <h3>
+                      <i class="icofont-users"></i><span>Term Insurance</span>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="spacer20"></div>
+                    <a href="{% url 'TermInsurance' %}" class="btn-custom invert capsule">Read more</a>
+                  </div>
+                </div>
+                <img src="{% static 'images/services/ti.png' %}" alt="" class="img-responsive" />
+              </div>
+            </div> {% endcomment %}
+
+            <div class="col-md-4">
+                <div class="mask rounded img-shadow">
+                  <div class="cover rounded">
+                    <div class="c-inner">
+                      <h3>
+                        <i class="icofont-shield"></i><span>General Insurance</span>
+                      </h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <div class="spacer20"></div>
+                      <a href="{% url 'GeneralInsurance' %}" class="btn-custom invert capsule">Read more</a>
+                    </div>
+                  </div>
+                  <img src="{% static 'images/services/gi.png' %}" alt="" class="img-responsive" />
+                </div>
+              </div>
+
+              {% comment %} <div class="col-md-4">
+                <div class="mask rounded img-shadow">
+                  <div class="cover rounded">
+                    <div class="c-inner">
+                      <h3>
+                        <i class="icofont-briefcase"></i><span>Business Insurance</span>
+                      </h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <div class="spacer20"></div>
+                      <a href="{% url 'BusinessInsurance' %}" class="btn-custom invert capsule">Read more</a>
+                    </div>
+                  </div>
+                  <img src="{% static 'images/services/bi.png' %}" alt="" class="img-responsive" />
+                </div>
+              </div> {% endcomment %}
+          </div>
+        </div>
+      </section>
+
+    <section class="bg-color text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><span class="id-color-secondary">Call us</span> for further information. Aquaria's customer care is
+                        here to help you <span class="id-color-secondary">anytime</span>.</h2>
+                    <p class="lead">We're available for 24 hours!</p>
+                </div>
+
+                <div class="col-md-6 text-lg-center text-sm-center">
+                    <div class="phone-num-big">
+                        <i class="fa fa-phone id-color-secondary"></i>
+                        <span class="pnb-text">
+                            Call Us Now
+                        </span>
+                        <span class="pnb-num">
+                            1 200 333 800
+                        </span>
+                    </div>
+                    <a href="#" class="btn-custom capsule med">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-fun-facts" class="pt60 pb60" data-bgcolor="#F2F6FE">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay="0s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="4500" data-speed="3000">0</span></h3>
+                        <h5 class="id-color">Home Protected</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".25s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="16" data-speed="3000">0</span>k</h3>
+                        <h5 class="id-color">People Saved</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".4s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="4" data-speed="3000">0</span>m</h3>
+                        <h5 class="id-color">Money Saved</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".6s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="52" data-speed="3000">0</span>k</h3>
+                        <h5 class="id-color">Contract Signed</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".8s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="100" data-speed="3000">0</span>+</h3>
+                        <h5 class="id-color">Countries</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay="1s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="2" data-speed="3000">2</span>k</h3>
+                        <h5 class="id-color">Staff Member</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- content close -->
+
+<a href="#" id="back-to-top"></a>
+{% endblock body %}

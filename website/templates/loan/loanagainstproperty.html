@@ -1,0 +1,381 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Aquaria - Loan Against Property</title>
+<meta content="Aquaria - Loan Against Property" name="description">
+<meta content="" name="keywords">
+<meta content="" name="author">
+{% endblock head %}
+
+
+{% block body %}
+
+
+<!-- content begin -->
+<div class="no-bottom no-top" id="content">
+    <div id="top"></div>
+
+    <!-- section begin -->
+    <section id="subheader" class="text-light" data-bgimage="url({% static 'images/background/lap1.jpg' %}) top">
+        <div class="center-y relative text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="spacer-single"></div>
+                        <h1>Loan Against Property</h1>
+                        <p>A better way to manage your cash flows</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+    {% include 'loanusp.html'%}
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="p-title invert">Profile</span><br>
+                    <h2>
+                        Loans against Property made easy with our swift LAP services
+                    </h2>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Features & Benefit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Eligibility</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <p>At Aquaria you  get the best loans for your property. Keeping a note about the  Loan against property is considered to be one of the best secured loans that acts as  collateral that will help you get loan funds. You can get the  mortgaged property, which can be  your residential property, commercial property, industrial property, and land.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <p>
+                                By helping our clients get the best rates on their property, we work to ensure you get the best amount. Let's take a look at the benefits of a loan against property:</p>
+                            <ul>
+                                <li>Childern Education
+                                </li>
+                                <li>Expansion of Business
+                                </li>
+                                <li>Debt Clearance
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            
+                                <div id="accordion-1" class="accordion">
+
+                                    <!-- Accordion item 1 -->
+                                    <div class="card">
+                                        <div id="heading-a1" class="card-header bg-white shadow-sm border-0">
+                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a4"
+                                                    aria-expanded="false" aria-controls="collapse-a4"
+                                                    class="d-block position-relative text-dark collapsible-link py-2">Salaried</a></h6>
+                                        </div>
+                                        <div id="collapse-a4" aria-labelledby="heading-a1" data-parent="#accordion-1"
+                                            class="collapse">
+                                            <div class="card-body p-4">
+                                                <ul><strong>Age</strong>
+                                                    <li>21 years to 70 years
+                                                    </li>
+                                                </ul>
+                                                <ul><strong>Employment</strong>
+                                                    <p>Individuals working under the following can apply:</p>
+                                                    <li>Government Institution</li>
+                                                    <li>Private sector</li>
+                                                    <li>Public sector</li>
+                                                    <li>MNCs or related companies</li>
+                                                    <li>Partnership Firms</li>
+                                                    <li>Proprietorship concern</li>
+                                                    <li>NGOs or related organisations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Accordion item 2 -->
+                                    <div class="card">
+                                        <div id="heading-a2" class="card-header bg-white shadow-sm border-0">
+                                            <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a5"
+                                                    aria-expanded="false" aria-controls="collapse-a5"
+                                                    class="d-block position-relative collapsed text-dark collapsible-link py-2">Self-employed individuals</a></h6>
+                                        </div>
+                                        <div id="collapse-a5" aria-labelledby="heading-a2" data-parent="#accordion-1"
+                                            class="collapse">
+                                            <div class="card-body p-4">
+                                                <ul><strong>Age</strong>
+                                                    <li>23 years to 70 years
+                                                    </li>
+                                                </ul>
+                                                <ul><strong>Employment</strong>
+                                                    <li>Self-employed professionals (doctors, architects, etc)
+                                                    </li>
+                                                    <li>Business owners, proprietors, partners of partnership firms, etc.
+                                                    </li>
+                                                  
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-md-1 d-none d-lg-block d-xl-block text-center">
+                    <img class="relative img-fluid" src="{% static 'images/background/lap2.jpg' %}" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="section-about-us-2" class="no-padding text-light" data-bgcolor="#595A9E">
+        <div class="image-container col-md-6 pull-left" data-bgimage="url({% static 'images/background/lap3.jpg' %}) center"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="inner-padding">
+                    <div class="col-md-6 offset-md-7" data-animation="fadeInRight" data-delay="200">
+                        <span class="p-title bg-color-secondary">Loan Against Property</span><br>
+                        <h2>
+                            Document Required for Loan Against Property
+                        </h2>
+                        <div class="small-border sm-left"></div>
+
+                        <p>When you apply for a loan against property there are certain documents required for loan that are mostly based on the 
+                            profession/occupation of the applicant. However, most of them are common for all. Let us take a look:
+                            <uL>
+                                <li>Identity Proof</li>
+                                <li>Address Proof</li>
+                                <li>Property-Related Documents</li>
+                                <li>Income Proof (Salaried Person)</li>
+                                <li>Income Proof (Self Employed Person)</li>
+                                <li>Co-applicant</li>
+                                <li>Passport Size photographs</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </section>
+
+    <section aria-label="section" data-bgcolor="#ffffff">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <h2>FAQ</h2>
+                    <div class="small-border"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Accordion -->
+                    <div id="accordion-1" class="accordion">
+
+                        <!-- Accordion item 1 -->
+                        <div class="card">
+                            <div id="heading-a1" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a1"
+                                        aria-expanded="false" aria-controls="collapse-a1"
+                                        class="d-block position-relative text-dark collapsible-link py-2">When is time
+                                        to update my coverage?</a></h6>
+                            </div>
+                            <div id="collapse-a1" aria-labelledby="heading-a1" data-parent="#accordion-1"
+                                class="collapse">
+                                <div class="card-body p-4">
+                                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 2 -->
+                        <div class="card">
+                            <div id="heading-a2" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a2"
+                                        aria-expanded="false" aria-controls="collapse-a2"
+                                        class="d-block position-relative collapsed text-dark collapsible-link py-2">How
+                                        often should I review my life insurance needs?</a></h6>
+                            </div>
+                            <div id="collapse-a2" aria-labelledby="heading-a2" data-parent="#accordion-1"
+                                class="collapse">
+                                <div class="card-body p-4">
+                                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 3 -->
+                        <div class="card">
+                            <div id="heading-a3" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-a3"
+                                        aria-expanded="false" aria-controls="collapse-a3"
+                                        class="d-block position-relative collapsed text-dark collapsible-link py-2">What
+                                        happen to my insurance if I stop paying?</a></h6>
+                            </div>
+                            <div id="collapse-a3" aria-labelledby="heading-a3" data-parent="#accordion-1"
+                                class="collapse">
+                                <div class="card-body p-4">
+                                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <!-- Accordion -->
+                    <div id="accordion-2" class="accordion">
+
+                        <!-- Accordion item 1 -->
+                        <div class="card">
+                            <div id="heading-b1" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b1"
+                                        aria-expanded="false" aria-controls="collapse-b1"
+                                        class="d-block position-relative text-dark collapsible-link py-2">How much life
+                                        insurance do i need?</a></h6>
+                            </div>
+                            <div id="collapse-b1" aria-labelledby="heading-b1" data-parent="#accordion-2"
+                                class="collapse">
+                                <div class="card-body p-4">
+                                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 2 -->
+                        <div class="card">
+                            <div id="heading-b2" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b2"
+                                        aria-expanded="false" aria-controls="collapse-b2"
+                                        class="d-block position-relative collapsed text-dark collapsible-link py-2">What
+                                        makes this company different form other?</a></h6>
+                            </div>
+                            <div id="collapse-b2" aria-labelledby="heading-b2" data-parent="#accordion-2"
+                                class="collapse">
+                                <div class="card-body p-4">
+                                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 3 -->
+                        <div class="card">
+                            <div id="heading-b3" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0"><a href="#" data-toggle="collapse" data-target="#collapse-b3"
+                                        aria-expanded="false" aria-controls="collapse-b3"
+                                        class="d-block position-relative collapsed text-dark collapsible-link py-2">Do I
+                                        need a life insurance policy?</a></h6>
+                            </div>
+                            <div id="collapse-b3" aria-labelledby="heading-b3" data-parent="#accordion-2"
+                                class="collapse">
+                                <div class="card-body p-4">
+                                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    {% include 'callus.html' %}
+
+
+    <section id="section-fun-facts" class="pt60 pb60" data-bgcolor="#F2F6FE">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay="0s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="4500" data-speed="3000">0</span></h3>
+                        <h5 class="id-color">Home Protected</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".25s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="16" data-speed="3000">0</span>k</h3>
+                        <h5 class="id-color">People Saved</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".4s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="4" data-speed="3000">0</span>m</h3>
+                        <h5 class="id-color">Money Saved</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".6s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="52" data-speed="3000">0</span>k</h3>
+                        <h5 class="id-color">Contract Signed</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".8s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="100" data-speed="3000">0</span>+</h3>
+                        <h5 class="id-color">Countries</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay="1s">
+                    <div class="de_count">
+                        <h3><span class="timer" data-to="2" data-speed="3000">2</span>k</h3>
+                        <h5 class="id-color">Staff Member</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- content close -->
+
+<a href="#" id="back-to-top"></a>
+{% endblock body %}
