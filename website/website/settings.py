@@ -146,7 +146,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     ]
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT  = os.path.join(BASE_DIR, 'static')
 
 # # HTTPS settings
 # SESSION_COOKIE_SECURE = True
